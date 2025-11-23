@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Registro - Tienda Móvil Express</title>
+
+  <!-- Rutas corregidas -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+  <header class="topbar">
+    <img src="img/logo.png" alt="logo" class="logo" style="width:200px; height:auto;">
+  </header>
+
+  <main class="container center">
+    <div class="card auth-card">
+      <h2>Crear Cuenta</h2>
+
+      <input id="reg-nombre" class="input" placeholder="Nombre completo">
+      <input id="reg-email" class="input" placeholder="Correo electrónico" type="email">
+      <input id="reg-pass" class="input" placeholder="Contraseña" type="password">
+
+      <label class="small">Tipo de usuario</label>
+      <select id="reg-rol" class="input">
+        <option value="cliente">Cliente</option>
+        <option value="tendero">Tendero</option>
+        <option value="mototaxi">Mototaxi</option>
+      </select>
+
+      <button class="btn" onclick="registrar()">Registrarme</button>
+
+      <p class="small">¿Ya tienes cuenta?  
+        <a href="login.html">Iniciar sesión</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- Ruta corregida -->
+  <script src="js/registro.js"></script>
+</body>
+</html>

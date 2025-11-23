@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Panel MotoTaxi</title>
+
+  <!-- RUTAS CORRECTAS -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/panels.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <img src="img/logo.png" alt="logo" class="logo" style="width:200px; height:auto;">
+    <nav style="margin-left:auto;display:flex;gap:8px;align-items:center">
+      <div id="motoStatus" class="badge green">Disponible</div>
+      <div id="mototaxiName" class="small"></div>
+      <a class="btn outline" href="#" onclick="logout('mototaxi')">Salir</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Panel Mototaxi</h1>
+
+    <div class="cards-row">
+      <div class="stat card">
+        <div class="stat-icon">📦</div>
+        <div>
+          <div class="small">Entregas Activas</div>
+          <div class="stat-value" id="entAct">0</div>
+        </div>
+      </div>
+
+      <div class="stat card">
+        <div class="stat-icon">✅</div>
+        <div>
+          <div class="small">Entregas Hoy</div>
+          <div class="stat-value" id="entHoy">0</div>
+        </div>
+      </div>
+    </div>
+
+    <section style="margin-top:40px;text-align:center" id="motoEmpty">
+      <!-- IMAGEN CAMBIADA (ANTES NO FUNCIONABA) -->
+      <img src="img/empty.png" style="width:100px;opacity:0.2">
+      <p class="small">No tienes entregas activas<br>Las nuevas entregas aparecerán aquí</p>
+    </section>
+  </main>
+
+  <!-- JS SIN ../ -->
+  <script src="js/panel_mototaxi.js"></script>
+</body>
+</html>
+

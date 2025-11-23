@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - Tienda Móvil Express</title>
+
+  <!-- Rutas corregidas -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <img src="img/logo.png" alt="logo" class="logo" style="width:200px; height:auto;">
+  </header>
+
+  <main class="container center">
+    <div class="card auth-card">
+      <h2>Iniciar Sesión</h2>
+
+      <input id="login-email" class="input" placeholder="Correo electrónico" type="email">
+      <input id="login-pass" class="input" placeholder="Contraseña" type="password">
+
+      <label class="small">Iniciar como</label>
+      <select id="login-rol" class="input">
+        <option value="cliente">Cliente</option>
+        <option value="tendero">Tendero</option>
+        <option value="mototaxi">Mototaxi</option>
+      </select>
+
+      <button class="btn" onclick="login()">INICIAR SESIÓN</button>
+      <p class="small">¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+    </div>
+  </main>
+
+  <!-- Ruta corregida -->
+  <script src="js/login.js"></script>
+
+</body>
+</html>
+

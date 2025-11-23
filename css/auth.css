@@ -1,0 +1,4 @@
+.auth-card{max-width:420px;margin:10px auto;text-align:center}
+.input{width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid #e6eef0}
+.auth-card h2{margin:8px 0 10px}
+.small a{color:var(--red);text-decoration:none;font-weight:600}

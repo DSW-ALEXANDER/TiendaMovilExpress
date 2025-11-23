@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tienda Móvil Express - Landing</title>
+
+  <!-- Rutas corregidas -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/landing.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="topbar">
+    <img src="img/logo.png" alt="logo" class="logo" style="width:200px; height:auto;">
+  </header>
+
+  <main class="container center">
+
+    <!-- Propuesta de valor -->
+    <section class="hero">
+      <h2>Tu solución rápida para compras desde el móvil</h2>
+      <p>Un sistema fácil, cómodo y accesible para gestionar productos desde cualquier lugar.</p>
+    </section>
+
+    <!-- Características -->
+    <section class="features">
+      <h3>Características del sistema</h3>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h4>Fácil de usar</h4>
+          <p>Interfaz limpia con navegación simple y accesible.</p>
+        </div>
+
+        <div class="feature-card">
+          <h4>Catálogo dinámico</h4>
+          <p>Productos organizados con imágenes y precios actualizados.</p>
+        </div>
+
+        <div class="feature-card">
+          <h4>Accesible en móvil</h4>
+          <p>Compatible con celulares, tablets y PC.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario -->
+    <section class="form-section">
+      <h3>¿Quieres recibir más información?</h3>
+
+      <!-- FORMULARIO CORREGIDO -->
+      <form id="leadForm" class="lead-form">
+        <input id="lead-name" type="text" placeholder="Nombre completo" required>
+        <input id="lead-email" type="email" placeholder="Correo electrónico" required>
+        <input id="lead-phone" type="tel" placeholder="Teléfono" required>
+
+        <button class="btn" type="submit">
+          Enviar información
+        </button>
+      </form>
+
+      <p id="msg" class="msg"></p>
+
+      <a class="btn outline" href="index.html" style="margin-top: 25px; display:inline-block;">
+        ⬅ Volver al Inicio
+      </a>
+
+    </section>
+
+  </main>
+
+  <!-- AGREGAR EL ARCHIVO JS -->
+  <script src="js/landing.js"></script>
+
+</body>
+</html>
+
+
+
